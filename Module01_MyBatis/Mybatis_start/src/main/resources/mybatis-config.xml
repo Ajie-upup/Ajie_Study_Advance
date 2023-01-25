@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--    environments：选择当前运行时环境    -->
+  <environments default="development">
+        <environment id="development">
+            <!--   当前事务交由 JDBC 管理    -->
+            <transactionManager type="JDBC"/>
+            <!--    当前使用 mybatis 连接池    -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///ajie_test"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+  </environments>
+
+        <mappers>
+            <mapper resource="UserMapper.xml"/>
+        </mappers>
+</configuration>
