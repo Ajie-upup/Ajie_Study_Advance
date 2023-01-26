@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="334a2b2d-5103-4dd8-8e2c-caf2ef0e6ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
     "jdk.selected.JAVA_MODULE": "1.8",
@@ -184,7 +183,7 @@
       <workItem from="1674649944546" duration="12000" />
       <workItem from="1674649960208" duration="3844000" />
       <workItem from="1674660383225" duration="22000" />
-      <workItem from="1674694340068" duration="1360000" />
+      <workItem from="1674694340068" duration="2211000" />
     </task>
     <task id="LOCAL-00001" summary="MyBatis基本使用">
       <created>1674655380238</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674695180173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询">
+      <created>1674695784202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674695784202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MyBatis基本使用" />
     <MESSAGE value="MyBatis基本使用：使用xml文件是实现数据库基本的增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用：使用xml文件是实现数据库基本的增删改查" />
+    <MESSAGE value="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询" />
   </component>
 </project>
