@@ -13,4 +13,11 @@ import java.util.List;
 public interface IUserDao {
 
     public List<User> findAll() throws IOException;
+
+    // 多条件查询：使用where - if
+    public User findByCondition(User user);
+
+    //多值查询：使用 foreach 进行拼接
+    public List<User> findByIds(int[] ids);
+
 }

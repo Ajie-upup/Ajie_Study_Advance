@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="334a2b2d-5103-4dd8-8e2c-caf2ef0e6ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MyTest.daoTest">
+  <component name="RunManager" selected="JUnit.MyTest.findByIds">
     <configuration name="MyTest.daoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis_start" />
       <extension name="coverage">
@@ -99,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest.findByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis_start" />
       <extension name="coverage">
         <pattern>
@@ -109,13 +109,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ajie.test" />
       <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="insert" />
+      <option name="METHOD_NAME" value="findByCondition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest.findByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis_start" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ajie.test" />
       <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="selectAll" />
+      <option name="METHOD_NAME" value="findByIds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.findByIds" />
+        <item itemvalue="JUnit.MyTest.findByCondition" />
         <item itemvalue="JUnit.MyTest.daoTest" />
         <item itemvalue="JUnit.MyTest.delete" />
         <item itemvalue="JUnit.MyTest.update" />
-        <item itemvalue="JUnit.MyTest.insert" />
-        <item itemvalue="JUnit.MyTest.selectAll" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +183,7 @@
       <workItem from="1674649944546" duration="12000" />
       <workItem from="1674649960208" duration="3844000" />
       <workItem from="1674660383225" duration="22000" />
-      <workItem from="1674694340068" duration="2211000" />
+      <workItem from="1674694340068" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="MyBatis基本使用">
       <created>1674655380238</created>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674695784202</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MyBatis基本使用：抽取jdbc.properties文件，typeAliases详解">
+      <created>1674696620403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674696620403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +234,7 @@
     <MESSAGE value="MyBatis基本使用" />
     <MESSAGE value="MyBatis基本使用：使用xml文件是实现数据库基本的增删改查" />
     <MESSAGE value="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询" />
+    <MESSAGE value="MyBatis基本使用：抽取jdbc.properties文件，typeAliases详解" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用：抽取jdbc.properties文件，typeAliases详解" />
   </component>
 </project>

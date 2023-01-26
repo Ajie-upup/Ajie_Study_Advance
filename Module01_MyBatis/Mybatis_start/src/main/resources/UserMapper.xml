@@ -3,9 +3,32 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ajie.dao.IUserDao">
-    <select id="findAll" resultType="user">
+    <sql id="selectUser">
         select *
         from user
+    </sql>
+    <select id="findAll" resultType="user">
+        <include refid="selectUser"></include>
+    </select>
+
+    <select id="findByCondition" parameterType="user" resultType="com.ajie.pojo.User">
+        select * from user
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="name!=null">
+                name = #{name}
+            </if>
+        </where>
+    </select>
+    <select id="findByIds" resultType="com.ajie.pojo.User">
+        select * from  user
+        <where>
+            <foreach collection="array" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
     </select>
 
     <insert id="insert" parameterType="com.ajie.pojo.User">

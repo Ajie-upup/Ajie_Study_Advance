@@ -126,5 +126,43 @@ public class MyTest {
         sqlSession.close();
     }
 
+    @Test
+    public void findByCondition() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);
+        User user = new User();
+        user.setName("李四");
+        User userCollect = userDao.findByCondition(user);
+        System.out.println(userCollect);
+
+        //关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void findByIds() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);
+        int[] ids = {1, 2};
+        List<User> users = userDao.findByIds(ids);
+        for (User user : users) {
+            System.out.println(user);
+        }
+        //关闭资源
+        sqlSession.close();
+    }
+
 
 }
