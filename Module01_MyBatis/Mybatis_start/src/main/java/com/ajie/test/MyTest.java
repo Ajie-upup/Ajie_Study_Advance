@@ -1,5 +1,6 @@
 package com.ajie.test;
 
+import com.ajie.dao.IUserDao;
 import com.ajie.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -103,6 +104,24 @@ public class MyTest {
 
         sqlSession.commit();
 
+        //关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void daoTest() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);
+        List<User> users = userDao.findAll();
+        for (User user : users) {
+            System.out.println(user);
+        }
         //关闭资源
         sqlSession.close();
     }
