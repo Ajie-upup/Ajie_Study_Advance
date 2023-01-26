@@ -39,4 +39,73 @@ public class MyTest {
         //关闭资源
         sqlSession.close();
     }
+
+    @Test
+    public void insert() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setId(4);
+        user.setName("赵六");
+        //执行 sql 语句
+        sqlSession.insert("userMapper.insert", user);
+
+        sqlSession.commit();
+
+        //关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void update() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        User user = new User();
+        user.setId(1);
+        user.setName("zhangsan");
+        //执行 sql 语句
+        sqlSession.insert("userMapper.updateById", user);
+
+        sqlSession.commit();
+
+        //关闭资源
+        sqlSession.close();
+    }
+
+    @Test
+    public void delete() throws IOException {
+        //加载核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+        //获取sqlSession 工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+
+        //获取 sqlSession 对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        int id = 4;
+        //执行 sql 语句
+        sqlSession.insert("userMapper.deleteById", id);
+
+        sqlSession.commit();
+
+        //关闭资源
+        sqlSession.close();
+    }
+
+
 }

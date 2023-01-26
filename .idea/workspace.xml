@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="334a2b2d-5103-4dd8-8e2c-caf2ef0e6ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/IPersistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Ajie_Study_Advance&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/Ajie_Study_Advance",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "fileTemplates"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
-  <component name="RunManager" selected="JUnit.MyTest.selectAll">
+}]]></component>
+  <component name="RunManager" selected="JUnit.MyTest.delete">
     <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis_start" />
       <extension name="coverage">
@@ -83,6 +78,38 @@
       <option name="PACKAGE_NAME" value="com.ajie.test" />
       <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis_start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ajie.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis_start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ajie.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +130,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis_start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ajie.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Ajie_Study_Advance" />
       <method v="2">
@@ -118,6 +161,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.delete" />
+        <item itemvalue="JUnit.MyTest.update" />
+        <item itemvalue="JUnit.MyTest.insert" />
         <item itemvalue="JUnit.MyTest.selectAll" />
         <item itemvalue="JUnit.MyTest" />
       </list>
@@ -134,8 +180,18 @@
       <workItem from="1674306783440" duration="1697000" />
       <workItem from="1674649825068" duration="110000" />
       <workItem from="1674649944546" duration="12000" />
-      <workItem from="1674649960208" duration="3747000" />
+      <workItem from="1674649960208" duration="3844000" />
+      <workItem from="1674660383225" duration="22000" />
+      <workItem from="1674694340068" duration="643000" />
     </task>
+    <task id="LOCAL-00001" summary="MyBatis基本使用">
+      <created>1674655380238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674655380238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,5 +207,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MyBatis基本使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用" />
   </component>
 </project>
