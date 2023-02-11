@@ -11,7 +11,38 @@
     <modules>
         <module>IPersistence</module>
         <module>Mybatis_start</module>
+        <module>Mybatis_multitable</module>
+        <module>IPersistence_test</module>
     </modules>
+
+    <!-- 引入依赖 -->
+    <dependencies>
+        <!-- mybatis坐标 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <!-- mysql驱动坐标 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.27</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- 单元测试坐标 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>
