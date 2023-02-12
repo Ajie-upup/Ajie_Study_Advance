@@ -1,4 +1,4 @@
-<mapper namespace="user">
+<mapper namespace="com.ajie.dao.IUserDao">
 
     <!--sql的唯一标识：namespace.id来组成 ： statementId-->
     <select id="findAll" resultType="com.ajie.pojo.User" >
@@ -14,5 +14,6 @@
     <select id="findByCondition" resultType="com.ajie.pojo.User" paramterType="com.ajie.pojo.User">
         select * from user where id = #{id} and username = #{username}
     </select>
+
 
 </mapper>

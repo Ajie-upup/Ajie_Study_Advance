@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @Author: ajie
  * @Date: 2023/2/11
- * @Description:
+ * @Description: User 实体类对象
  */
 @Data
 public class User {
