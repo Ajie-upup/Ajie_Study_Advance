@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: 解析 Mapper 文件，完成 Configuration 的封装
  */
 public class XMLMapperBuilder {
 

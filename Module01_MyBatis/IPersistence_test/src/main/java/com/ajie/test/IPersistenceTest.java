@@ -9,6 +9,7 @@ import com.ajie.sqlSession.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @Author: ajie
@@ -38,11 +39,11 @@ public class IPersistenceTest {
 //
         IUserDao userDao = sqlSession.getMapper(IUserDao.class);
 
-        User res = userDao.findByCondition(user);
-        System.out.println(res);
-//        List<User> all = userDao.findAll();
-//        for (User user1 : all) {
-//            System.out.println(user1);
-//        }
+//        User res = userDao.findByCondition(user);
+//        System.out.println(res);
+        List<User> all = userDao.findAll();
+        for (User user1 : all) {
+            System.out.println(user1);
+        }
     }
 }

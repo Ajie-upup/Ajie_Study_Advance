@@ -16,7 +16,7 @@ import java.util.Properties;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: 使用dom4j对配置文件进行解析，封装Configuration
  */
 public class XMLConfigBuilder {
     private Configuration configuration;

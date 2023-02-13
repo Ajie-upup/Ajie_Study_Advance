@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: DefaultSqlSession 默认实现类
  */
 public class DefaultSqlSession implements SqlSession {
     private Configuration configuration;

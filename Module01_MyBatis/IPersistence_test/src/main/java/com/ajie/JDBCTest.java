@@ -20,13 +20,13 @@ public class JDBCTest {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // 通过驱动管理类获取数据库链接
             connection = DriverManager.
-                    getConnection("jdbc:mysql://localhost:3306/ajie_mybatis?characterEncoding =UTF-8", "root", "root");
+                    getConnection("jdbc:mysql://localhost:3306/ajie_test?characterEncoding =UTF-8", "root", "root");
             // 定义sql语句？表示占位符
             String sql = "select * from user where username = ?";
             // 获取预处理statement
             preparedStatement = connection.prepareStatement(sql);
             // 设置参数，第⼀个参数为sql语句中参数的序号(从1开始)，第⼆个参数为设置的参数值
-            preparedStatement.setString(1, "tom");
+            preparedStatement.setString(1, "zhangsan");
             // 向数据库发出sql执⾏查询，查询出结果集
             resultSet = preparedStatement.executeQuery();
             // 遍历查询结果集

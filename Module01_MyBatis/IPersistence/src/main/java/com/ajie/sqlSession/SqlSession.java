@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: SqlSession 接口
  */
 public interface SqlSession {
 

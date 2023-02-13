@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: 封装解析过后的 sql
  */
 public class BoundSql {
 

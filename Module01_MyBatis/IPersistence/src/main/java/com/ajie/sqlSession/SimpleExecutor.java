@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: 封装 JDBC 完成数据查询操作
  */
 public class SimpleExecutor implements Executor {
     @Override

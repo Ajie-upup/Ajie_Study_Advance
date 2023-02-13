@@ -6,7 +6,7 @@ import com.ajie.pojo.Configuration;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: DefaultSqlSessionFactory, 默认实现类
  */
 public class DefaultSqlSessionFactory implements SqlSessionFactory {
     private Configuration configuration;

@@ -11,7 +11,7 @@ import java.io.InputStream;
 /**
  * @Author: ajie
  * @Date: 2023/2/12
- * @Description:
+ * @Description: SqlSessionFactoryBuilder 构造工厂
  */
 public class SqlSessionFactoryBuilder {
 
