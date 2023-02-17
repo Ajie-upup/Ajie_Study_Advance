@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ajie.mapper.IOrderMapper">
+    <resultMap id="orderMap" type="com.ajie.pojo.Order">
+        <id property="id" column="id"></id>
+        <result property="orderTime" column="ordertime"></result>
+        <result property="total" column="total"></result>
+
+        <association property="user" javaType="com.ajie.pojo.User">
+            <result property="id" column="uid"></result>
+            <result property="username" column="username"></result>
+        </association>
+    </resultMap>
+
+    <select id="findOrderAndUser" resultMap="orderMap">
+        select *
+        from orders o,
+             user u
+        where o.uid = u.id
+    </select>
+</mapper>
