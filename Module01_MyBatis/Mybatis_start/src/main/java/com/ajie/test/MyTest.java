@@ -49,16 +49,14 @@ public class MyTest {
         //获取sqlSession 工厂对象
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
 
-        //获取 sqlSession 对象
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+        //获取 sqlSession 对象 ----开启自动提交
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
 
         User user = new User();
         user.setId(4);
-        user.setName("赵六");
+        user.setUsername("赵六");
         //执行 sql 语句
         sqlSession.insert("userMapper.insert", user);
-
-        sqlSession.commit();
 
         //关闭资源
         sqlSession.close();
@@ -77,7 +75,7 @@ public class MyTest {
 
         User user = new User();
         user.setId(1);
-        user.setName("zhangsan");
+        user.setUsername("zhangsan");
         //执行 sql 语句
         sqlSession.insert("userMapper.updateById", user);
 
@@ -137,7 +135,7 @@ public class MyTest {
 
         IUserDao userDao = sqlSession.getMapper(IUserDao.class);
         User user = new User();
-        user.setName("李四");
+        user.setUsername("李四");
         User userCollect = userDao.findByCondition(user);
         System.out.println(userCollect);
 
