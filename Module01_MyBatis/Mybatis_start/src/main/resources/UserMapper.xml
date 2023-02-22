@@ -14,16 +14,16 @@
     <select id="findByCondition" parameterType="user" resultType="com.ajie.pojo.User">
         select * from user
         <where>
-            <if test="id != null">
-                id = #{id}
+            <if test="id != null and id != ''">
+                and id = #{id}
             </if>
-            <if test="name!=null">
-                name = #{name}
+            <if test="name!=null and name != ''">
+                and name = #{name}
             </if>
         </where>
     </select>
     <select id="findByIds" resultType="com.ajie.pojo.User">
-        select * from  user
+        select * from user
         <where>
             <foreach collection="array" open="id in (" close=")" item="id" separator=",">
                 #{id}
