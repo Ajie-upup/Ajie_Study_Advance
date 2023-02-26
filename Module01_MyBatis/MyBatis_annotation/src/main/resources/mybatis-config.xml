@@ -6,6 +6,10 @@
     <!--  加载外部 properties 文件,必须放置在 configuration 文件首位  -->
     <properties resource="jdbc.properties"></properties>
 
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
     <typeAliases>
         <!--    给单个实体类起别名    -->
         <!--        <typeAlias type="com.ajie.pojo.User" alias="user"></typeAlias>-->

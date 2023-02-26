@@ -2,6 +2,7 @@ package com.ajie.mapper;
 
 import com.ajie.pojo.User;
 import org.apache.ibatis.annotations.*;
+import org.mybatis.caches.redis.RedisCache;
 
 import java.util.List;
 
@@ -10,6 +11,8 @@ import java.util.List;
  * @Date: 2023/2/17
  * @Description:
  */
+@CacheNamespace(implementation = RedisCache.class)
+//@CacheNamespace(blocking = true)
 public interface IUserMapper {
     /**
      * 添加用户
@@ -24,7 +27,7 @@ public interface IUserMapper {
      *
      * @param user
      */
-    @Update("update user set username = #{username} where id = #{id}}")
+    @Update("update user set username = #{username} where id = #{id}")
     public void updateUser(User user);
 
     /**
