@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="334a2b2d-5103-4dd8-8e2c-caf2ef0e6ce4" name="Changes" comment="">
+    <list default="true" id="334a2b2d-5103-4dd8-8e2c-caf2ef0e6ce4" name="Changes" comment="自定义持久层框架的编写">
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/test/java/com/ajie/MybatisPluginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/java/com/ajie/test/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/Mybatis_start/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/main/java/com/ajie/mapper/IUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/main/java/com/ajie/mapper/IUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/test/java/com/ajie/PluginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module01_MyBatis/MyBatis_annotation/src/test/java/com/ajie/PluginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +26,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,101 +69,109 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/Ajie_Study_Advance",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "fileTemplates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Ajie_Study_Advance/Module01_MyBatis/MyBatis_annotation/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.MyTest.findByIds">
-    <configuration name="MyTest.daoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis_start" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Ajie_Study_Advance\Module01_MyBatis\MyBatis_annotation\src\main\resources" />
+      <recent name="E:\Ajie_Study_Advance\Module01_MyBatis\IPersistence\src\main\java\com\ajie" />
+      <recent name="E:\Ajie_Study_Advance\Module01_MyBatis\Mybatis_multitable\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisPluginTest.testPageHelper">
+    <configuration name="CacheTest.RedisCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="PATTERN" value="com.ajie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ajie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="daoTest" />
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.CacheTest" />
+      <option name="METHOD_NAME" value="RedisCacheTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis_start" />
+    <configuration name="CacheTest.firstLevelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="PATTERN" value="com.ajie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ajie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.CacheTest" />
+      <option name="METHOD_NAME" value="firstLevelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.findByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis_start" />
+    <configuration name="CacheTest.secondLevelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="PATTERN" value="com.ajie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ajie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="findByCondition" />
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.CacheTest" />
+      <option name="METHOD_NAME" value="secondLevelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.findByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis_start" />
+    <configuration name="MybatisPluginTest.testPageHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="PATTERN" value="com.ajie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ajie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="findByIds" />
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.MybatisPluginTest" />
+      <option name="METHOD_NAME" value="testPageHelper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis_start" />
+    <configuration name="PluginTest.testPlugin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ajie.test.*" />
+          <option name="PATTERN" value="com.ajie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ajie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ajie.test.MyTest" />
-      <option name="METHOD_NAME" value="update" />
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.PluginTest" />
+      <option name="METHOD_NAME" value="testPlugin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.findByIds" />
-        <item itemvalue="JUnit.MyTest.findByCondition" />
-        <item itemvalue="JUnit.MyTest.daoTest" />
-        <item itemvalue="JUnit.MyTest.delete" />
-        <item itemvalue="JUnit.MyTest.update" />
+        <item itemvalue="JUnit.MybatisPluginTest.testPageHelper" />
+        <item itemvalue="JUnit.PluginTest.testPlugin" />
+        <item itemvalue="JUnit.CacheTest.RedisCacheTest" />
+        <item itemvalue="JUnit.CacheTest.secondLevelTest" />
+        <item itemvalue="JUnit.CacheTest.firstLevelTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +213,29 @@
       <workItem from="1674649944546" duration="12000" />
       <workItem from="1674649960208" duration="3844000" />
       <workItem from="1674660383225" duration="22000" />
-      <workItem from="1674694340068" duration="3582000" />
+      <workItem from="1674694340068" duration="4481000" />
+      <workItem from="1674705714684" duration="14000" />
+      <workItem from="1674771139874" duration="6048000" />
+      <workItem from="1674818610136" duration="8000" />
+      <workItem from="1675945914569" duration="232000" />
+      <workItem from="1675999142390" duration="5000" />
+      <workItem from="1676118091476" duration="4759000" />
+      <workItem from="1676129840220" duration="189000" />
+      <workItem from="1676188591505" duration="8204000" />
+      <workItem from="1676271762770" duration="5599000" />
+      <workItem from="1676597470937" duration="9042000" />
+      <workItem from="1676641252307" duration="942000" />
+      <workItem from="1676681837844" duration="1686000" />
+      <workItem from="1677061635261" duration="14000" />
+      <workItem from="1677061772629" duration="3861000" />
+      <workItem from="1677390542590" duration="7117000" />
+      <workItem from="1677458803048" duration="24000" />
+      <workItem from="1677478297911" duration="2361000" />
+      <workItem from="1677509654774" duration="1082000" />
+      <workItem from="1677545350953" duration="132000" />
+      <workItem from="1677591475526" duration="905000" />
+      <workItem from="1677634193622" duration="13000" />
+      <workItem from="1677642742597" duration="3580000" />
     </task>
     <task id="LOCAL-00001" summary="MyBatis基本使用">
       <created>1674655380238</created>
@@ -213,7 +265,77 @@
       <option name="project" value="LOCAL" />
       <updated>1674696620403</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MyBatis基本使用：动态sql(where-if,foreach)，抽取sql片段(include)">
+      <created>1674697981760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674697981760</updated>
+    </task>
+    <task id="LOCAL-00006" summary="JDBC 问题的分析 +&#10;自定义持久层框架使用端的编写: sqlMapConfig.xml 和 mapper.xml 配置文件的编写">
+      <created>1676129139227</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676129139227</updated>
+    </task>
+    <task id="LOCAL-00007" summary="自定义持久层框架的编写">
+      <created>1676212104032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676212104032</updated>
+    </task>
+    <task id="LOCAL-00008" summary="自定义持久层框架的测试">
+      <created>1676279008797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676279008797</updated>
+    </task>
+    <task id="LOCAL-00009" summary="回顾 mybatis 基本入门">
+      <created>1676598509971</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676598509971</updated>
+    </task>
+    <task id="LOCAL-00010" summary="使用xml文件实现多表查询:一对一，一对多，多对多">
+      <created>1676601183878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676601183878</updated>
+    </task>
+    <task id="LOCAL-00011" summary="使用注解的方式代替 xml 实现 CRUD 开发和多表查询">
+      <created>1676614624831</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676614624831</updated>
+    </task>
+    <task id="LOCAL-00012" summary="动态 sql 整理">
+      <created>1677064137166</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677064137166</updated>
+    </task>
+    <task id="LOCAL-00013" summary="mybatis缓存：一级缓存,二级缓存,二级缓存整合redis">
+      <created>1677397622161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677397622161</updated>
+    </task>
+    <task id="LOCAL-00014" summary="自定义mybatis插件并完成测试">
+      <created>1677652362152</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677652362152</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +357,16 @@
     <MESSAGE value="MyBatis基本使用：使用xml文件是实现数据库基本的增删改查" />
     <MESSAGE value="MyBatis基本使用：通过dao代理开发方式回顾mybatis数据库查询" />
     <MESSAGE value="MyBatis基本使用：抽取jdbc.properties文件，typeAliases详解" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis基本使用：抽取jdbc.properties文件，typeAliases详解" />
+    <MESSAGE value="MyBatis基本使用：动态sql(where-if,foreach)，抽取sql片段(include)" />
+    <MESSAGE value="JDBC 问题的分析 +&#10;自定义持久层框架使用端的编写: sqlMapConfig.xml 和 mapper.xml 配置文件的编写" />
+    <MESSAGE value="自定义持久层框架的编写" />
+    <MESSAGE value="自定义持久层框架的测试" />
+    <MESSAGE value="回顾 mybatis 基本入门" />
+    <MESSAGE value="使用xml文件实现多表查询:一对一，一对多，多对多" />
+    <MESSAGE value="使用注解的方式代替 xml 实现 CRUD 开发和多表查询" />
+    <MESSAGE value="动态 sql 整理" />
+    <MESSAGE value="mybatis缓存：一级缓存,二级缓存,二级缓存整合redis" />
+    <MESSAGE value="自定义mybatis插件并完成测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义mybatis插件并完成测试" />
   </component>
 </project>
