@@ -22,6 +22,16 @@
             <!--配置参数-->
             <property name="name" value="Bob"/>
         </plugin>
+
+        <!--分⻚插件：如果有分⻚插件，要排在通⽤mapper之前-->
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <!--  设置方言 -->
+            <property name="dialect" value="mysql"/>
+        </plugin>
+        <plugin interceptor="tk.mybatis.mapper.mapperhelper.MapperInterceptor">
+            <!-- 通⽤Mapper接⼝，多个通⽤接⼝⽤逗号隔开 -->
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+        </plugin>
     </plugins>
 
     <!--    environments：选择当前运行时环境    -->

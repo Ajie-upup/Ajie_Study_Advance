@@ -15,6 +15,9 @@ import java.util.List;
 public interface IUserMapper {
 
     @Select("select id,username from user")
+    public List<User> selectAllIdAndName();
+
+    @Select("select * from user")
     public List<User> selectAll();
 
     /**
