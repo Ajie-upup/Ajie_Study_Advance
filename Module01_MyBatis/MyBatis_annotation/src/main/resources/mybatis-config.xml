@@ -17,6 +17,13 @@
         <package name="com.ajie.pojo"/>
     </typeAliases>
 
+    <plugins>
+        <plugin interceptor="com.ajie.plugin.MyPlugin">
+            <!--配置参数-->
+            <property name="name" value="Bob"/>
+        </plugin>
+    </plugins>
+
     <!--    environments：选择当前运行时环境    -->
     <environments default="development">
         <environment id="development">

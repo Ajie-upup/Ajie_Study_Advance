@@ -2,7 +2,6 @@ package com.ajie.mapper;
 
 import com.ajie.pojo.User;
 import org.apache.ibatis.annotations.*;
-import org.mybatis.caches.redis.RedisCache;
 
 import java.util.List;
 
@@ -11,9 +10,13 @@ import java.util.List;
  * @Date: 2023/2/17
  * @Description:
  */
-@CacheNamespace(implementation = RedisCache.class)
-//@CacheNamespace(blocking = true)
+//@CacheNamespace(implementation = RedisCache.class)
+@CacheNamespace(blocking = true)
 public interface IUserMapper {
+
+    @Select("select id,username from user")
+    public List<User> selectAll();
+
     /**
      * 添加用户
      *
@@ -49,11 +52,11 @@ public interface IUserMapper {
 
 
     @Results({
-            @Result(property = "id",column = "id"),
-            @Result(property = "username",column = "username"),
-            @Result(property = "password",column = "password"),
-            @Result(property = "birthday",column = "birthday"),
-            @Result(property = "orderList",column = "id",javaType = List.class,
+            @Result(property = "id", column = "id"),
+            @Result(property = "username", column = "username"),
+            @Result(property = "password", column = "password"),
+            @Result(property = "birthday", column = "birthday"),
+            @Result(property = "orderList", column = "id", javaType = List.class,
                     many = @Many(select = "com.ajie.mapper.IOrderMapper.findById"))
     })
     @Select("select * from user")
@@ -61,11 +64,11 @@ public interface IUserMapper {
 
     @Select("select * from user")
     @Results({
-            @Result(property = "id",column = "id"),
-            @Result(property = "username",column = "username"),
-            @Result(property = "password",column = "password"),
-            @Result(property = "birthday",column = "birthday"),
-            @Result(property = "roleList" ,column = "id",javaType = List.class,
+            @Result(property = "id", column = "id"),
+            @Result(property = "username", column = "username"),
+            @Result(property = "password", column = "password"),
+            @Result(property = "birthday", column = "birthday"),
+            @Result(property = "roleList", column = "id", javaType = List.class,
                     many = @Many(select = "com.ajie.mapper.IRoleMapper.findByUid"))
     })
     public List<User> findUserAndRole();
